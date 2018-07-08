@@ -91,7 +91,7 @@ void print(Digit *U, int n, int d) {
   *Ud = 0;
   int a = d/9;
   int b = d%9;
-  for (int i = 0; i < a; i++) {
+  while (a--) {
     multiply(U, n, 1000000000);
     cout << setw(9) << *Ud;
     *Ud = 0;
